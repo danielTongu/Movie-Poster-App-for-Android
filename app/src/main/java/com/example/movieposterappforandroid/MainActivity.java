@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView menuIcon = findViewById(R.id.menuIcon);
         ImageView searchIcon = findViewById(R.id.searchIcon);
         setSupportActionBar(toolbar);
-        ((TextView) findViewById(R.id.toolbarTitle)).setText("Movies");
+        ((TextView) findViewById(R.id.toolbarTitle)).setText("All Posters");
 
         menuIcon.setOnClickListener(v -> drawerLayout.openDrawer(navigationView));
         searchIcon.setOnClickListener(v -> openSearchDialog());
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void switchToMoviesView() {
         isInWatchlistView = false;
-        ((TextView) findViewById(R.id.toolbarTitle)).setText("All Movies");
+        ((TextView) findViewById(R.id.toolbarTitle)).setText("All Posters");
         posterAdapter.updateList(movieList);
     }
 

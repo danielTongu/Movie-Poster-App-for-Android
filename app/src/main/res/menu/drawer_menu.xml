@@ -3,12 +3,12 @@
     <item
         android:id="@+id/nav_all_movies"
         android:icon="@drawable/ic_all_movies"
-        android:title="All Movies"
+        android:title="@string/all_posters"
         android:actionLayout="@layout/nav_menu_item" /> <!-- Custom layout -->
 
     <item
         android:id="@+id/nav_watchlist"
         android:icon="@drawable/ic_watchlist"
-        android:title="Watchlist"
+        android:title="@string/watchlist"
         android:actionLayout="@layout/nav_menu_item" /> <!-- Custom layout -->
 </menu>
