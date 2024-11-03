@@ -1,0 +1,96 @@
+<!-- res/layout/poster_item.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/moviePoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/colorMediumGray">
+
+        <!-- Movie Poster Image -->
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/inception"
+            android:scaleType="centerCrop"
+            android:background="@color/colorDarkestGray"/>
+
+        <!-- Movie Details -->
+        <LinearLayout
+            android:id="@+id/movieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/movieImage"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Rating Bar -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="3"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:progressTint="@color/accentColor"
+                android:secondaryProgressTint="@color/black"
+                android:backgroundTint="@color/colorDarkestGray" />
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/movieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Title"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <!-- Director Name -->
+            <TextView
+                android:id="@+id/movieAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Director Name"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <!-- Movie Description -->
+            <TextView
+                android:id="@+id/movieDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description_text"
+                android:textSize="14sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Selection Checkmark Overlay -->
+        <ImageView
+            android:id="@+id/checkmarkOverlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_check_circle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            app:tint="@color/textPositiveFeedback"
+            android:contentDescription="Displays checked circle icon" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
