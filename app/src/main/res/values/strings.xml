@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movie Poster App for Android</string>
+    <string name="all_posters">All Posters</string>
+    <string name="watchlist">Watchlist</string>
+</resources>

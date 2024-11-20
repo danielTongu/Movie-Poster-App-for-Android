@@ -1,0 +1,14 @@
+<!-- res/menu/drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_all_movies"
+        android:icon="@drawable/ic_all_movies"
+        android:title="@string/all_posters"
+        android:actionLayout="@layout/nav_menu_item" /> <!-- Custom layout -->
+
+    <item
+        android:id="@+id/nav_watchlist"
+        android:icon="@drawable/ic_watchlist"
+        android:title="@string/watchlist"
+        android:actionLayout="@layout/nav_menu_item" /> <!-- Custom layout -->
+</menu>
